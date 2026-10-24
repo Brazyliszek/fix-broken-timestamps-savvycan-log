@@ -2,6 +2,8 @@
 
 A small GUI tool that repairs corrupted `Time Stamp` values in CSV logs exported from **SavvyCAN**.
 
+![Showoff screen](https://github.com/Brazyliszek/fix-broken-timestamps-savvycan-log/blob/main/example.jpg?raw=true)
+
 ## The problem
 
 SavvyCAN has a known bug where received CAN frames (especially over serial/SLCAN interfaces) are written to CSV with **huge negative timestamps** (e.g. `-1788895826027060`). The original timing information is lost — the values are the result of a parsing error and cannot be reversed.
